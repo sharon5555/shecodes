@@ -4,26 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SheCodes workshop</title>
+    <title>SheCodes Workshop</title>
     <style>
-      .contact-details {
+      button:hover {
+        background-color: blueviolet;
+        color: white;
+        border-color: blueviolet;
+      }
+      h2 {
         text-align: center;
-        margin-top: 30px;
-        font-size: 16px;
+        font-size: 30px;
+        color: blueviolet;
+        padding-bottom: 40px;
+        line-height: 0;
+      }
+      .coding {
+        font-size: 30px;
+      }
+      h1 {
+        text-align: center;
+        padding-top: 100px;
+        display: block;
+        margin: 0 auto;
+      }
+      div.para {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 18px;
+        padding-bottom: 25px;
+        font-family: monospace;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: white;
+        color: blueviolet;
+        text-align: center;
+        display: block;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0 auto;
+        border-radius: 20px;
+        border-color: blueviolet;
+        border: 1px solid;
       }
     </style>
   </head>
   <body>
-    <ul>
-      <li class="code"><strong>Coders</strong></li>
-      <li class="course"><strong>Courses</strong></li>
-      <li class="story"><strong>Stories</strong></li>
-    </ul>
-    <div class="contact-details"></div>
+    <div class="head">
+      <h1>
+        <span class="coding">👩‍💻SheCodes is a Coding Workshop for Women</span>
+      </h1>
+      <h2><span class="tech">Access a new career in Technology</span></h2>
+    </div>
+
+    <div class="para">
+      <span class="She"
+        >She Codes teaches coding, design and management skills to women</span
+      >
+      <br />
+      <span class="teach"><strong>Limited amount of spots!</strong></span>
+    </div>
+    <button class="apply-button">Apply now</button>
+    <script>
+      function applyNow() {
+        let firstName = prompt("What is your first name?");
+        let age = prompt("How old are you?");
+        let h1 = document.querySelector("h1");
+
+        if (age >= 18) {
+          h1.innerHTML = "Hi, " + firstName + "! Welcome to SheCodes!";
+        } else {
+          h1.innerHTML = "Sorry, " + firstName + "! You cannot join SheCodes";
+        }
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", applyNow);
+    </script>
   </body>
 </html>
-<p></p>
-<h4></h4>
-<p></p>
-<h4></h4>
-<p></p>
