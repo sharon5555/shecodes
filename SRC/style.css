@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  padding-top: 100px;
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+span h2 {
+  text-align: center;
+  font-size: 30px;
+  color: blueviolet;
+  padding-bottom: 40px;
+  line-height: 0;
+}
+.shecodes {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 30px;
+  font-family: monospace;
+}
+button {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  border-color: blueviolet;
+  border: 1px solid;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  padding: 20px;
+}

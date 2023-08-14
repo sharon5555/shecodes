@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fast food</title>
+  </head>
+  <style>
+    body {
+      margin: 30px;
+    }
+    div {
+      width: 500px;
+      margin: 0 auto;
+      display: block;
+      padding: 20px;
+      border-radius: 10px;
+      background: linear-gradient(
+        109.6deg,
+        rgba(0, 0, 0, 0.93) 11.2%,
+        rgb(63, 61, 61) 78.9%
+      );
+      max-width: 500px;
+    }
+    .container img {
+      width: 300px;
+      float: right;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+    .right {
+      font-size: 24px;
+      padding-top: 50px;
+      margin: 0 auto;
+      color: white;
+    }
+    .rit {
+      font-size: 18px;
+      font-weight: lighter;
+      text-align: center;
+      color: white;
+    }
+    img {
+      width: 300px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #c51350;
+      color: white;
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      margin: 20px auto;
+      border-radius: 5px;
+      border-color: blueviolet;
+      border: none;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+    }
+    p {
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      line-height: 35px;
+      color: white;
+    }
+    .link {
+      text-decoration: underline;
+      color: white;
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <div class="block">
+      <span class="container">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/998/original/pic_2.jpg?1690143342"
+          alt="food"
+        />
+        <h1 class="right">Nazy Breakfast<br />Tasty Delicious Food</h1>
+        <h2 class="rit">
+          <em>Breakfast is a key component of a balanced diet.</em>
+        </h2>
+      </span>
+      <br />
+      <hr />
+      <p>
+        Breakfast is the first meal of the day usually eaten in the morning.The
+        word in English refers to breaking the fasting period of the previous
+        night.Various "typical" or "traditional" breakfast menus exist, with
+        food choices varying by regions and traditions worldwide.
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Breakfast"
+        class="link"
+        target="_blank"
+        ><small>Read more on Wikipedia</small></a
+      >
+      <br />
+      <hr />
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/995/original/pic_1.jpg?1690142740"
+        alt="food"
+      />
+      <br />
+      <button>Try Nazy</button>
+    </div>
+    <script>
+      function tryNazy() {
+        let name = prompt("What is your name?");
+        let food = prompt("Want some breakfast?");
+        if (food === "yes") {
+          alert(
+            "Thanks " + name + " Breakfast is ready to be served, " + "😇 "
+          );
+        } else {
+          alert("Gosh!!, " + name + " You are missing out " + " 😢");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", tryNazy);
+    </script>
+  </body>
+</html>

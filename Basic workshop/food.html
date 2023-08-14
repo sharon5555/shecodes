@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chinese Food</title>
+  </head>
+  <style>
+    span {
+      background: linear-gradient(
+        90.5deg,
+        rgb(250, 156, 245) 1.6%,
+        rgb(182, 76, 233) 98.2%
+      );
+      border: 1px solid white;
+      width: 500px;
+      display: block;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bolder;
+      border-radius: 5px;
+      padding: 10px;
+      border: 1px solid;
+      color: white;
+      border-color: white;
+      line-height: 1.5;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+      line-height: 1.5;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      width: 300px;
+      max-width: 100%;
+    }
+    p {
+      line-height: 1.5;
+      margin: 20px 0 20px;
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #c51350;
+      color: white;
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      margin: 20px auto;
+      border-radius: 5px;
+      border-color: blueviolet;
+      border: none;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+    }
+    .link {
+      text-decoration: underline;
+      font-size: small;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <div>
+      <span>
+        <h1>I Love Chinese Foods</h1>
+
+        <h2>Especially Congee</h2>
+        <hr />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/298/original/640-145164541-bowl-of-chinese-porridge-with-spoon.jpg?1689598958"
+          alt="Chinese Food"
+        />
+        <hr />
+
+        <p>
+          <strong>Congee or conjee</strong> is a type of mostly savoury rice
+          porridge or gruel of Asian origin. It can be eaten plain, where it is
+          typically served with side dishes, or it can be served with
+          ingredients such as meat, fish, seasonings and flavourings, most often
+          savory, but sometimes sweet. It is typically served as a meal on its
+          own, especially for breakfast or people who are ill. Names for congee
+          are as varied as the style of its preparation, but all are made with
+          rice cooked as a softened porridge with a larger quantity of water
+          than other types of cooked rice like <em>pilaf or claypot rice.</em>
+        </p>
+
+        <a
+          href="https://en.wikipedia.org/wiki/Congee"
+          class="link"
+          target="_blank"
+          >Read on Wikipedia</a
+        >
+
+        <button>TRY CONGEE</button>
+        <br />
+      </span>
+    </div>
+    <script>
+      function tryCongee() {
+        let name = prompt("what is your name?");
+
+        alert(
+          "Thank you " + name + ", We'll be in touch!! Make sure to Try Congee"
+        );
+      }
+      let tryButton = document.querySelector("button");
+      tryButton.addEventListener("click", tryCongee);
+    </script>
+  </body>
+</html>
